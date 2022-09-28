@@ -2,7 +2,7 @@ package ru.mirea.task2.exs9;
 
 import java.util.Scanner;
 
-public class Deal {
+public class Poker {
 
     public static void main(String[] args) {
 

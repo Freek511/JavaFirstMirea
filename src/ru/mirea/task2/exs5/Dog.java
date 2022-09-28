@@ -1,4 +1,4 @@
-package ru.mirea.task2.exs4;
+package ru.mirea.task2.exs5;
 
 public class Dog {
     private int age;
