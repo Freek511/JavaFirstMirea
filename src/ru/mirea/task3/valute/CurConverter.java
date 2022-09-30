@@ -1,4 +1,4 @@
-package ru.mirea.task3.currencyconverter;
+package ru.mirea.task3.valute;
 
 public class CurConverter {
 

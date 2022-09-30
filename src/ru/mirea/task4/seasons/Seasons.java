@@ -19,10 +19,10 @@ public enum Seasons {
 
     public void printSeason(Seasons season) {
         switch (season) {
-            case SUMMER -> System.out.println("I love summer!");
-            case AUTUMN -> System.out.println("I love autumn!");
-            case WINTER -> System.out.println("I love winter!");
-            case SPRING -> System.out.println("I love spring!");
+            case SUMMER : System.out.println("I love summer!"); break;
+            case AUTUMN : System.out.println("I love autumn!"); break;
+            case WINTER : System.out.println("I love winter!"); break;
+            case SPRING : System.out.println("I love spring!"); break;
         }
     }
 

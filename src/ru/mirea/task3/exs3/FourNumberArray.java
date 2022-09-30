@@ -22,7 +22,7 @@ public class FourNumberArray {
     private static void fillRandom (int[] array) {
         Random rand = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = rand.nextInt(10, 100);
+            array[i] = rand.nextInt(100);
         }
     }
 

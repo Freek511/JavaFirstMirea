@@ -19,12 +19,12 @@ public class FoolProof {
         Random random = new Random();
         System.out.println("First array:");
         for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(0, size + 1);
+            array[i] = random.nextInt(size + 1);
             System.out.printf("%d ", array[i]);
         }
         int[] array2 = new int[(int)(array.length / 2 + 1)];
         System.out.println("\nSecond array:");
-        for (int i = 0; i < array.length; i+=2) {
+        for (int i = 0; i < array.length; i += 2) {
             array2[i / 2] = array[i];
             System.out.printf("%d ", array2[i / 2]);
         }

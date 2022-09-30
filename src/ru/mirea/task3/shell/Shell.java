@@ -24,21 +24,5 @@ public class Shell {
         String dbl = Double.toString(3.14);
         System.out.println("\nString converted from double: " + dbl);
 
-        System.out.println("""
-                \n\t\t\t\t\t\tBoolean\t  Byte\tCharacter\tDouble\tFloat\tInteger\tLong\tShort
-                byteValue\t\t\t\t                 \s
-                doubleValue\t\t\t\t\t0\t\tx\t\t0\t\tx\t\tx\t\tx\t\tx\t\tx
-                floatValue\t\t\t\t\t0\t\tx\t\t0\t\tx\t\tx\t\tx\t\tx\t\tx
-                intValue\t\t\t\t\t0\t\tx\t\t0\t\tx\t\tx\t\tx\t\tx\t\tx
-                longValue\t\t\t\t\t0\t\tx\t\t0\t\tx\t\tx\t\tx\t\tx\t\tx
-                shortValue\t\t\t\t\t0\t\tx\t\t0\t\tx\t\tx\t\tx\t\tx\t\tx
-                parseXxx\t\t\t\t\tX\t\tx\t\t0\t\tx\t\tx\t\tX\t\tX\t\tX
-                parseXxx with radix\t\t\t0\t\tx\t\t0\t\t0\t\t0\t\tX\t\tX\t\tX
-                valueOf with radix\t\t\t0\t\tx\t\t0\t\t0\t\t0\t\tX\t\tX\t\tX
-                toString\t\t\t\t\t0\t\t0\t\t0\t\t0\t\t0\t\t0\t\t0\t\tX
-                toString(primitive)\t\t\tX\t\tX\t\tX\t\tX\t\tX\t\tX\t\tX\t\t0
-                toString(primitive,radix)\t0\t\t0\t\t0\t\t0\t\t0\t\tX\t\tX\t\t0""");
-
-
     }
 }
