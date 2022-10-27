@@ -7,7 +7,7 @@ import java.io.File;
 class Animation extends JFrame {
     int WINDOW_WIDTH = 600;
     int WINDOW_HEIGHT = 600;
-    String animation_images_path = "C:\\Users\\Artem\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task5\\pictures\\";
+    String animation_images_path = "C:\\Users\\ivc1-5\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task5\\pictures";
 
     Animation()
     {
