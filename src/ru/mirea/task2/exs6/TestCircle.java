@@ -7,6 +7,6 @@ public class TestCircle
         Circle obj1 = new Circle(1, 1, 4);
         Circle obj2 = new Circle(2, 2, 4);
         System.out.println(obj1.equals(obj2));
-        System.out.println(obj1.calcArea() + " " + obj2.calcLenght());
+        System.out.println(obj1.calcArea() + " " + obj1.calcLenght());
     }
 }

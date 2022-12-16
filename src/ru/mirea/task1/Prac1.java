@@ -115,19 +115,19 @@ import java.util.Scanner;
 
         public static void main(String[] args)
         {
-            //System.out.print("Input size of array : ");
-            //int lenght = in.nextInt();
-            //System.out.println("Input array:");
-            // fillArr(lenght);
-            // getArrSumDoWhile(lenght);
-            // getArrSumFor(lenght);
-            // getArrSumWhile(lenght);
+            System.out.print("Input size of array : ");
+            int lenght = in.nextInt();
+            System.out.println("Input array:");
+             fillArr(lenght);
+             getArrSumDoWhile(lenght);
+             getArrSumFor(lenght);
+             getArrSumWhile(lenght);
             System.out.println(getFactorial(10));
-            //tenHarmonicSeries();
-            //for (int i = 0; i < args.length; i++)
-            // {
-            //   System.out.println("аргумент = " + args[i]);
-            // }
+            tenHarmonicSeries();
+            for (int i = 0; i < args.length; i++)
+             {
+               System.out.println("аргумент = " + args[i]);
+             }
         }
 
     }

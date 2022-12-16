@@ -6,7 +6,7 @@ public class InternetOrdersManager implements OrdersManager, Serializable {
 
     QueueNode head = null;
     QueueNode tail = null;
-    Integer size = 0;
+    int size = 0;
 
 
     @Override
@@ -14,7 +14,7 @@ public class InternetOrdersManager implements OrdersManager, Serializable {
         QueueNode tmp = head;
         int total = 0;
         while (tmp != null) {
-            total += tmp.value.getItems().stream().mapToInt(obj -> (obj.getName() == itemName) ? 1 : 0).sum();
+            total += tmp.value.getItems().stream().mapToInt(obj -> (obj.getName().equals(itemName)) ? 1 : 0).sum();
             tmp = tmp.next;
         }
         return total;
@@ -58,35 +58,38 @@ public class InternetOrdersManager implements OrdersManager, Serializable {
     public int ordersQuantity() {
         QueueNode tmp = head;
         int count = 0;
-        while (tmp != null) count++;
+        while (tmp != null) {
+            count++;
+            tmp = tmp.next;
+        }
         return count;
     }
 
 
-    public boolean add(Order order){
+    public boolean add(Order order, Customer customer) {
         size++;
-        if(head == null){
-            head = new QueueNode(order,null);
+        if (head == null) {
+            head = new QueueNode(order, customer, null);
             tail = head;
-        }else{
-            tail.next = new QueueNode(order,tail);
+        } else {
+            tail.next = new QueueNode(order, customer, tail);
             tail = tail.next;
         }
         return true;
     }
 
-    public Order remove(){
+    public Order remove() {
         size--;
         QueueNode tmp = head;
-        if(head.next != null) head = head.next;
-        else{
+        if (head.next != null) head = head.next;
+        else {
             head = null;
             tail = null;
         }
         return tmp.value;
     }
 
-    public Order order(){
+    public Order order() {
         return head.value;
     }
 
