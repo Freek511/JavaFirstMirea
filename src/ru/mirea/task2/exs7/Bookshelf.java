@@ -9,9 +9,10 @@ public class Bookshelf {
     private int count;
 
     public Bookshelf(int count) {
-        books = new Book[count];
+        this.count = count;
+        books = new Book[this.count];
         Scanner in = new Scanner(System.in);
-        for(int i = 0; i < count; i++)
+        for(int i = 0; i < this.count; i++)
         {
             System.out.print("Введите название: ");
             String name = in.next();
@@ -45,7 +46,7 @@ public class Bookshelf {
     public void sortByYear() {
         for(int i = 0; i < count - 1; i++)
         {
-            for(int j = i + 1; j < count; i++)
+            for(int j = i + 1; j < count; j++)
             {
                 if(books[i].getYear() > books[j].getYear())
                 {
